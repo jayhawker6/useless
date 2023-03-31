@@ -331,7 +331,7 @@ void techsupport(void)
         printf("\n choice: %s", choice);
         if (strcmp(choice, "n") == 0)
         {
-            flag = 0;
+            flag = 0; // test
             break;
         }
     }
