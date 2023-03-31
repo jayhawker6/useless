@@ -307,3 +307,32 @@ void fortune(void)
         }
     }
 }
+
+void techsupport(void)
+{
+    system("clear");
+    int flag = 1;
+    while (flag)
+    {
+        char choice[2];
+        printf("\nWelcome to the tech support hotline! How can we help you today?\n");
+        fgets(buffer, sizeof buffer, stdin);
+        printf("I'm sorry, I didn't quite catch that. Could you repeat that?\n");
+        fgets(buffer, sizeof buffer, stdin);
+        printf("Okay, so even if you have already done it before, can you turn it off and on again?\n");
+        fgets(buffer, sizeof buffer, stdin);
+        printf("Okay, one moment, I'm going to have to transfer you to my manager.\n");
+        fgets(buffer, sizeof buffer, stdin);
+        printf("*Hold music turns on*\n");
+        printf("Wait on hold? (y/n): ");
+        fflush(stdin);
+        fgets(buffer, sizeof buffer, stdin);
+        sscanf(buffer, "%s", choice);
+        printf("\n choice: %s", choice);
+        if (strcmp(choice, "n") == 0)
+        {
+            flag = 0;
+            break;
+        }
+    }
+}
