@@ -167,7 +167,7 @@ void coinflip(void)
 void fortune(void)
 {
     int number;
-    char result[100] = {0};
+    char result[250];
 
     printf("\nCome to the magic fortune cookie for all your advice!\n");
     fgets(buffer, sizeof buffer, stdin);
@@ -240,5 +240,10 @@ void fortune(void)
     case 21:
         strcpy(result, "You will be woefully unsuccessful in your endeavors.");
         break;
+    default:
+        strcpy(result, "You will never be successful in your endeavors. Give up now.");
+        break;
     }
+    printf("You open the fortune cookie and it says: %s\n", result);
+    fgets(buffer, sizeof buffer, stdin);
 }

@@ -39,6 +39,7 @@ int main(void)
         printf("Welcome to the useless machine!\n");
         printf("1. Magic 8-ball\n");
         printf("2. Coin flip\n");
+        printf("3. Fortune cookie\n");
         printf("9. Exit\n");
         printf("\nPlease enter your choice: ");
         fgets(buffer, sizeof buffer, stdin);
@@ -50,6 +51,9 @@ int main(void)
             break;
         case 2: // Coin flip
             coinflip();
+            break;
+        case 3: // Fortune cookie
+            fortune();
             break;
         case 9: // Exit
             flag = 0;
