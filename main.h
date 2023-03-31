@@ -163,3 +163,82 @@ void coinflip(void)
         }
     }
 }
+
+void fortune(void)
+{
+    int number;
+    char result[100] = {0};
+
+    printf("\nCome to the magic fortune cookie for all your advice!\n");
+    fgets(buffer, sizeof buffer, stdin);
+    fflush(stdin);
+
+    number = rand() % 30 + 1;
+
+    switch (number)
+    {
+    case 1:
+        strcpy(result, "You will never be rid of your crippling depression.");
+        break;
+    case 2:
+        strcpy(result, "You will never lose that crippling student loan debt.");
+        break;
+    case 3:
+        strcpy(result, "Someone will always be better than you.");
+        break;
+    case 4:
+        strcpy(result, "You will ultimately die alone.");
+        break;
+    case 5:
+        strcpy(result, "Humans will go extinct before you find your true love.");
+        break;
+    case 6:
+        strcpy(result, "A wise man once said, \"Life is meaningless.\"");
+        break;
+    case 7:
+        strcpy(result, "Failure is inevitable.");
+        break;
+    case 8:
+        strcpy(result, "Death comes to those who wait.");
+        break;
+    case 9:
+        strcpy(result, "Depression is a disease, and you have it.");
+        break;
+    case 10:
+        strcpy(result, "Evil will always triumph over good.");
+        break;
+    case 11:
+        strcpy(result, "Love is a lie, and you will never find it.");
+        break;
+    case 12:
+        strcpy(result, "Life is a sham.");
+        break;
+    case 13:
+        strcpy(result, "Why are you still reading this?");
+        break;
+    case 14:
+        strcpy(result, "Never give up. It's funny because you will never succeed.");
+        break;
+    case 15:
+        strcpy(result, "Inspiration fails you.");
+        break;
+    case 16:
+        strcpy(result, "Hope is a construct that you will never understand.");
+        break;
+    case 17:
+        strcpy(result, "Abandon your dreams, they will never come true.");
+        break;
+    case 18:
+        strcpy(result, "Death is the only escape.");
+        break;
+    case 19:
+        strcpy(result, "A fish is a fish, but a fish is not a fish.");
+        break;
+    case 20:
+        strcpy(result, "Understanding is a concept that you will never grasp.");
+        break;
+    case 21:
+        strcpy(result, "You will be woefully unsuccessful in your endeavors.");
+        break;
+    }
+}
