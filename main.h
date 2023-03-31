@@ -240,6 +240,33 @@ void fortune(void)
     case 21:
         strcpy(result, "You will be woefully unsuccessful in your endeavors.");
         break;
+    case 22:
+        strcpy(result, "You will never be successful in your endeavors.");
+        break;
+    case 23: 
+        strcpy(result, "Nothing hurts more than the realization that nothing matters.");
+        break;
+    case 24: 
+        strcpy(result, "You will find love, but then lose it when it hurts the most.");
+        break;
+    case 25: 
+        strcpy(result, "Losing is the only way to win. You will never win, because you never try.");
+        break;
+    case 26: 
+        strcpy(result, "You will seek higher education, but you will never graduate.");
+        break;
+    case 27: 
+        strcpy(result, "Many wise people have avoided you recently.");
+        break;
+    case 28: 
+        strcpy(result, "Riches are on your horizon, but you are too far away to see them.");
+        break;
+    case 29: 
+        strcpy(result, "Succeeding is not something you are capable of.");
+        break;
+    case 30: 
+        strcpy(result, "Luck will shine upon you, but it will be a cold day in hell before you see it.");
+        break;
     default:
         strcpy(result, "You will never be successful in your endeavors. Give up now.");
         break;
