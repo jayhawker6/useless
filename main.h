@@ -328,7 +328,6 @@ void techsupport(void)
         fflush(stdin);
         fgets(buffer, sizeof buffer, stdin);
         sscanf(buffer, "%s", choice);
-        printf("\n choice: %s", choice);
         if (strcmp(choice, "n") == 0)
         {
             flag = 0; // test
