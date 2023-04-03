@@ -23,7 +23,7 @@ int main(void)
         sscanf(buffer, "%d", &choice);
         switch (choice)
         {
-        case 1: // Magic 8-balls
+        case 1: // Magic 8-ball
             eightball();
             break;
         case 2: // Coin flip
