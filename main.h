@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 char buffer[BUFSIZ];
 
@@ -339,11 +340,6 @@ void techsupport(void)
 void gui(void)
 {
     system("clear");
-    int i = 0;
-    for (i = 0; i < 1000000; i++)
-    {
-        printf("\rIn progress %d", i / 100);
-    }
-    printf("\n");
-    fflush(stdout);
+    printf("Not done yet\n");
+    fgets(buffer, sizeof buffer, stdin);
 }
