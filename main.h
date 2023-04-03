@@ -341,5 +341,5 @@ void gui(void)
 {
     system("clear");
     printf("Not done yet\n");
-    fgets(buffer, sizeof buffer, stdin);
+    fgets(buffer, sizeof buffer, stdin); //gpg I hate you so much
 }
