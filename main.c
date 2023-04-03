@@ -17,6 +17,7 @@ int main(void)
         printf("2. Coin flip\n");
         printf("3. Fortune cookie\n");
         printf("4. Tech Support\n");
+        printf("5. GUI Version\n");
         printf("9. Exit\n");
         printf("\nPlease enter your choice: ");
         fgets(buffer, sizeof buffer, stdin);
@@ -34,6 +35,9 @@ int main(void)
             break;
         case 4: // Tech Support
             techsupport();
+            break;
+        case 5: // GUI Version
+            gui();
             break;
         case 9: // Exit
             flag = 0;

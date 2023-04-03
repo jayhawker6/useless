@@ -335,3 +335,15 @@ void techsupport(void)
         }
     }
 }
+
+void gui(void)
+{
+    system("clear");
+    int i = 0;
+    for (i = 0; i < 1000000; i++)
+    {
+        printf("\rIn progress %d", i / 100);
+    }
+    printf("\n");
+    fflush(stdout);
+}
