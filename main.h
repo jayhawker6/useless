@@ -341,5 +341,5 @@ void gui(void)
 {
     system("clear");
     printf("Not done yet\n");
-    fgets(buffer, sizeof buffer, stdin); //gpg hate you so much
+    fgets(buffer, sizeof buffer, stdin); //zsh work
 }
