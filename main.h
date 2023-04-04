@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// #include <unistd.h>
+#include <ncurses.h>
 
 char buffer[BUFSIZ];
 
@@ -337,9 +337,14 @@ void techsupport(void)
     }
 }
 
-void gui(void)
+int gui(void)
 {
     system("clear");
-    printf("Not done yet\n");
-    fgets(buffer, sizeof buffer, stdin); //zsh work
+    initscr();			/* Start curses mode 		  */
+	printw("Hello World !!!");	/* Print Hello World		  */
+	refresh();			/* Print it on to the real screen */
+	getch();			/* Wait for user input */
+	endwin();			/* End curses mode		  */
+
+	return 0;
 }
