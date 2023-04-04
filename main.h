@@ -340,4 +340,5 @@ void gui(void)
 {
     system("clear");
     printf("TODO: GUI\n");
+    fgets(buffer, sizeof buffer, stdin);
 }
