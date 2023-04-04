@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ncurses.h>
-#include <cdk.h>
 
 char buffer[BUFSIZ];
 
@@ -341,5 +339,5 @@ void techsupport(void)
 void gui(void)
 {
     system("clear");
-    activateCDKDialog(dialog, 0);
+    printf("TODO: GUI\n");
 }
