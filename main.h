@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ncurses.h>
+#include <cdk.h>
 
 char buffer[BUFSIZ];
 
@@ -337,14 +338,8 @@ void techsupport(void)
     }
 }
 
-int gui(void)
+void gui(void)
 {
     system("clear");
-    initscr();			/* Start curses mode 		  */
-	printw("Hello World !!!");	/* Print Hello World		  */
-	refresh();			/* Print it on to the real screen */
-	getch();			/* Wait for user input */
-	endwin();			/* End curses mode		  */
-
-	return 0;
+    activateCDKDialog(dialog, 0);
 }
