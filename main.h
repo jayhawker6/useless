@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
+// #include <unistd.h>
 
 char buffer[BUFSIZ];
 
@@ -341,5 +341,5 @@ void gui(void)
 {
     system("clear");
     printf("Not done yet\n");
-    fgets(buffer, sizeof buffer, stdin); //gpg I hate you so much
+    fgets(buffer, sizeof buffer, stdin); //gpg hate you so much
 }
